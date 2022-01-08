@@ -1,0 +1,91 @@
+/* "https://source.unsplash.com/user/random/sunny" */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url('./bg3.jpg');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color:white;
+}
+h1,h2{
+    margin: 0.8rem 0;
+}
+h4{
+    margin: 0.4rem 0;
+}
+
+.container{
+    width:70vw;
+    height: 75vh;
+    background-image: linear-gradient(rgba(0,0,0,0.9),rgba(5,5,5,0.2));
+    box-shadow: 0.5rem 0.5rem 0.8rem black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+@media screen and (min-width:400px) {
+    .container{
+        width: 300px;
+    }
+
+    
+}
+@media screen and (max-width:400px){
+    .body{
+    background-image: url('./bg2.jpg');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+}
+
+.form{
+    margin:  1rem 0 0  0 ;
+    display: inline-block;
+    padding: 0.5rem;
+    font-size: 1em;
+    background-color: black;
+    font-weight: bold;
+    border-radius: 0.9rem;
+    color: white;
+    
+}
+.city-input{
+    border:none;
+    background-color: black;
+    color: white;
+}
+.temp-info{
+    text-align: left;
+}
+
+#icon{
+    font-size: 4rem;
+    animation: move 4s linear infinite;
+}
+@keyframes move {
+    0%{
+         transform: translateX(0px)
+    }
+    50%{
+         transform: translateX(50px)
+    }
+    98%{
+         transform: translateX(0px)
+    }
+}
